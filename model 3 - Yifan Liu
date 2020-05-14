@@ -52,7 +52,7 @@ df_dum$region <- NULL
 df_dum$rname <- NULL  
 df_dum$rname_West_EU <- NULL #getting rid of one dummy variable to prevent multicollinearity
 #MODEL 3: LINEAR MODEL WITH ALL VARIABLES
-set.seed(56)
+set.seed(123)
 n = nrow(df_dum)
 Index = sample(1:n, size = round(0.7*n), replace=FALSE)
 train = df_dum[Index,]
