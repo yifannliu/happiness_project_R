@@ -135,3 +135,7 @@ RMSE_BASE_in
 par(mfrow=c(2,2))
 plot(M3.6)
 # overall good residual features
+# get regression results and adjusted R-squared
+summar(M3.6)
+# get CV
+cbind(M3.6$coefficients,confint(M3.6))
